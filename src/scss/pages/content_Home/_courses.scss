@@ -1,0 +1,87 @@
+#courses {
+  padding: 100px 0;
+
+  .course-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .course-right-col {
+    flex-basis: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .course-left-col {
+    flex-basis: 50%;
+  }
+
+  .course-text {
+    max-width: 350px;
+
+    .course-text-title {
+      font-size: 2rem;
+      letter-spacing: 0.4rem;
+      font-weight: 600;
+      font-family: 'Ubuntu', sans-serif;
+      &::after {
+        content: "";
+        width: 10rem;
+        height: 0.5rem;
+        background: #f67c92;
+        display: inline-block;
+        margin: 15px 0;
+        border-radius: 2rem;
+        bottom: -1rem;
+      }
+    }
+
+    p {
+      font-family: "Taviraj", serif;
+      font-size: 1.2rem;
+    }
+  }
+
+  .course-btn {
+    margin: 40px 0 0 0;
+  }
+  .common-btn {
+    padding: 18px 40px;
+    background: transparent;
+    font-size: 1.5rem;
+    outline: none;
+    border: 2px solid #f67c92;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    border-radius: 5px;
+
+    &:hover {
+      background: #f67c92;
+      color: #fff;
+      transition: all 0.8 ease-out;
+    }
+  }
+}
+@media only screen and (max-width: 770px) {
+  #courses {
+    .course-left-col {
+      flex-basis: 100%;
+    }
+    .course-right-col {
+      flex-basis: 100%;
+      margin-top: 70px;
+      img {
+        width: 200px;
+      }
+    }
+
+    .course-text {
+      .course-text-title {
+        text-align: center;
+      }
+    }
+  }
+}

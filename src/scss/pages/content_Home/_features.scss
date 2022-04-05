@@ -1,0 +1,68 @@
+#features {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .feature-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .feature-col {
+    flex-basis: 25%;
+    text-align: center;
+
+    img {
+      width: 100px;
+    }
+
+    h4 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    p{
+      font-family: 'Taviraj', serif;
+      font-size: 1.2rem;
+    }
+  }
+  .feature-btn {
+    margin: 80px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Button */
+    .common-btn {
+      padding: 18px 40px;
+      background: transparent;
+      font-size: 1.5rem;
+      outline: none;
+      border: 2px solid #f67c92;
+      font-weight: 500;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+      border-radius: 5px;
+      &:hover {
+        background: #f67c92;
+        color: #fff;
+        transition: all 0.8 ease-out;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #features {
+    .feature-col {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}

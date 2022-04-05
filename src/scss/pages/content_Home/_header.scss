@@ -1,0 +1,153 @@
+#header {
+  height: 100vh;
+  background-image: url("../../../assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contenido {
+  margin-right: 100px;
+  margin-left: 100px;
+
+  /* Logo */
+  .logo {
+    margin-top: 20px;
+    width: 100px;
+  }
+
+  .header-text {
+    max-width: 350px;
+    margin-top: 140px;
+
+    button {
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+    &::after {
+      content: "";
+      width: 10rem;
+      height: 0.5rem;
+      background: #f67c92;
+      display: inline-block;
+      bottom: -1rem;
+      margin: 15px 0;
+      border-radius: 2rem;
+    }
+  }
+  p {
+    font-size: 1.2rem;
+    //font-style: italic;
+    color: #000408;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    font-family: "Taviraj", serif;
+  }
+  /* Button */
+  .btnHeader {
+    padding: 18px 40px;
+    background: none;
+    outline: none;
+    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    border: 2px solid #f67c92;
+    font-family: "Overpass", sans-serif;
+    //font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      background: #f67c92;
+      color: #fff;
+      //transition: all 0.8 ease-in-out;
+    }
+  }
+
+  /* Line */
+  .line {
+    line-height: 8px;
+    .line-1 {
+      width: 15px;
+      height: 15px;
+      background: #f67c92;
+      display: inline-block;
+    }
+    .line-2 {
+      width: 80px;
+      height: 1px;
+      background: #f67c92;
+      display: inline-block;
+    }
+    .line-3 {
+      width: 60px;
+      height: 1px;
+      background: #f67c92;
+      display: inline-block;
+    }
+  }
+
+  /* Social Icons */
+  .social-links {
+    margin-top: 65px;
+    a {
+      //border: 1px solid #f67c92;
+      font-size: 30px;
+      background-color: transparent;
+      border-radius: 7px;
+      padding: 10px;
+      margin: 10px;
+      color: #606163;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+        transition: all 0.5s ease;
+      }
+
+      .facebook {
+        color: aqua;
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 770px) {
+  #header {
+    background-image: none;
+
+    .contenido {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    .logo {
+      margin-top: 27px;
+      width: 70px;
+    }
+    .header-text {
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .common-btn {
+      padding: 10px 16px;
+    }
+
+    .social-links {
+      margin-top: 50px;
+    }
+  }
+}

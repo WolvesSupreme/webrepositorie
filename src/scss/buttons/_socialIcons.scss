@@ -1,0 +1,79 @@
+.social-icons {
+  width: 45px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  background: #fab3c4;
+  border-radius: 7px;
+  padding: 15px 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  .fa-whatsapp {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0 auto 20px 10px;
+    color: #fff;
+
+    &:hover {
+      color: #128c7e;
+      transform: translateY(-3px) scale(1.05);
+    }
+  }
+  .fa-instagram {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0 auto 20px 10px;
+    color: #fff;
+
+    &:hover {
+      color: #e4405f;
+      transform: translateY(-3px) scale(1.05);
+    }
+  }
+  .fa-twitter {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0 auto 20px 10px;
+    color: #fff;
+
+    &:hover {
+      color: #00acee;
+      transform: translateY(-3px) scale(1.05);
+    }
+  }
+  .fa-envelope {
+    display: block;
+    font-size: 1.4rem;
+    margin: 0 auto 20px 10px;
+    color: #fff;
+
+    &:hover {
+      color: #ea4335;
+      transform: translateY(-3px) scale(1.05);
+    }
+  }
+  .fa-facebook-f {
+    display: block;
+    font-size: 1.25rem;
+    margin: 0 auto 20px 13px;
+    color: #fff;
+
+    &:hover {
+      color: #3b5998;
+      transform: translateY(-3px) scale(1.05);
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .social-icons{
+    width: 40px;
+    margin: 15px auto;
+  }
+}

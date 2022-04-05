@@ -1,0 +1,26 @@
+.scroll-container {
+  .scroll {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #fab3c4;
+    overflow: hidden;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+
+    .fa-arrow-up {
+      color: #fff;
+    }
+
+    &:hover {
+      background: #f67c92;
+      color: #fff;
+    }
+  }
+}

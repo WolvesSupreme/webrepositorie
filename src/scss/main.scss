@@ -1,0 +1,22 @@
+// import Pages - Home
+@import "pages/content_Home/header";
+@import 'pages/content_Home/about';
+@import 'pages/content_Home/features';
+@import 'pages/content_Home/courses';
+@import 'pages/content_Home/offer';
+
+// import pages 
+@import 'pages/contact';
+
+// import Base
+@import "base/base";
+
+// import components sections
+@import "components/footer";
+@import "components/nahomi";
+@import "components/navbar";
+
+// import Button
+@import 'buttons/socialIcons';
+@import 'buttons/scrollTop';
+@import 'buttons/flotante';
